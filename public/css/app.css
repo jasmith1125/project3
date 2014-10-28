@@ -1,0 +1,117 @@
+/* custom css */
+
+
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 400;
+	text-align: left;
+	font-size: 1em;
+}
+/* adjust white space on left and right for small-screen devices */
+/* adjust display font size for small-screen devices */
+@media only screen and (max-width: 40em) { 
+body h1 {
+	font-size: 1.5em;
+	padding-top: .5em;
+}
+#wrap {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.mainpage .getform {
+	font-size: 1.2em;
+}
+}
+ /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/* adjust white space on left and right for medium-screen devices */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+body h1 {
+	font-size: 2.5em;
+	padding-top: .5em;
+}
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+h1 {
+	font-family: 'Bubblegum Sans', sans-serif;
+	font-size: 3.5em;
+	color: #323232 !important;
+	text-align: center;
+	margin-top: .5em;
+}
+ footer {
+	background-color: #1D282C;
+	height: 40rem;
+	font-weight: normal;
+	padding-top: 1em;
+	color: #ffffff;
+}
+#wrap {
+	background-color: #ffffff;
+	padding-bottom: 2em;
+}
+img {
+	width: 100%;
+	margin: 0 auto;
+}
+footer ul {
+	text-align: right;
+	margin-right: 1em;
+	color: #ffffff;
+}
+footer ul li {
+	display: inline;
+	padding-left: 2em;
+	font-family: 'Roboto', Arial, sans-serif;
+
+}
+footer a:link {
+    color: #ffffff;
+}
+footer a:visited {
+    color: #ffffff;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+/*styling for links in body of page */
+.getform {
+	font-family: 'Bubblegum Sans', sans-serif;
+	font-size: 1.5em;
+}
+.getform a:link {
+	color: #2E6A7F;
+}
+.getform a:visited {
+	text-decoration: none;
+}
+.getform a:hover {
+	text-decoration: underline;
+}
+@media only screen and (max-width: 40em) { 
+.inline-link {
+	font-size: 1.25em;
+}
+	} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+
+button, .button {
+	background-color: #2E6A7F;
+	border-color: #1D282C;
+	font-family: 'Bubblegum Sans', Arial, sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+} 
+
+#generate {
+	/*margin-top: -1em; */
+	margin-bottom: 1em;
+}
+/* for error text */
+.errors {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: bold;
+  color: #B23417;
+  font-size: .8em;
+  text-align: center;
+}

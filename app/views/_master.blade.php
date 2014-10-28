@@ -7,19 +7,24 @@
    <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <title>@yield('title', 'Pit Stop: The Developer&rsquo;s Best Friend')</title>
-  
+    
+    {{ HTML::style('css/foundation.css') }}
+  {{ HTML::style('css/app.css') }}
+  {{ HTML::script('js/vendor/modernizr.js') }}
+
    
 
 </head>
 
 <body>
   
-  <!-- <img src='../img/banner.jpg' alt='Friendly pitbull with "Pit Stop" title'> -->
+  <img src='../img/banner.jpg' alt='Friendly pitbull with "Pit Stop" title'>
 
 
 
 @yield('body')
 
+@yield('scripts')
 
 
    <div>
@@ -31,7 +36,11 @@
             
           </ul>
   </footer>
-  
+  <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script> 
 </div>
 </body>
 </html>
