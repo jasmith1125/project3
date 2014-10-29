@@ -23,15 +23,16 @@ Route::get('/text_generator/{number_of_paragraphs?}', function()
     $number_of_paragraphs = Input::get('number_of_paragraphs');
     $generator = new LoremIpsum();
     $paragraphs = $generator->getParagraphs($number_of_paragraphs);
-    
+    $success_message = '';
+
     //form validation
     $rules = array(
-    'number_of_paragraphs' => "Integer|min:1|max:5"
+    'number_of_paragraphs' => "Integer|min:1|max:99"
     );
 
     $validator = Validator::make(
     array('name' => 'number_of_paragraphs'),
-    array('name' => 'required|min:1|max:5')
+    array('name' => 'required|min:1|max:99')
 );
     
     $validator = Validator::make(Input::all(), $rules);
@@ -41,7 +42,8 @@ Route::get('/text_generator/{number_of_paragraphs?}', function()
     }
         return View::make('text_generator')
             ->with('number_of_paragraphs', $number_of_paragraphs)
-            ->with('paragraphs', $paragraphs);
+            ->with('paragraphs', $paragraphs)
+            ->with('success_message', $success_message);
 });
 
 // process user input and generate placeholder text 
@@ -53,15 +55,27 @@ Route::post('/text_generator', function()
     $number_of_paragraphs = Input::get('number_of_paragraphs');
     $generator = new LoremIpsum();
     $paragraphs = $generator->getParagraphs($number_of_paragraphs);
+    $success_message = '';
+
+    
+
+    // display "here is..." text if text is generated
+    if(isset ($_POST['number_of_paragraphs'])) {
+          $success_message = '<p>Here is your placeholder text:</p>';
+          } else { echo '' ;} 
+    if(isset ($_POST['doggerel'])) {
+        $success_message = '<p>Here is your placeholder text:</p>';
+          } else { echo '' ;} 
+        
 
     //form validation
     $rules = array(
-    'number_of_paragraphs' => "Integer|min:1|max:5"
+    'number_of_paragraphs' => "Integer|min:1|max:99"
     );
 
     $validator = Validator::make(
     array('name' => 'number_of_paragraphs'),
-    array('name' => 'required|min:1|max:5')
+    array('name' => 'required|min:1|max:99')
 );
     
     $validator = Validator::make(Input::all(), $rules);
@@ -71,7 +85,8 @@ Route::post('/text_generator', function()
     }
         return View::make('text_generator')
             ->with('number_of_paragraphs', $number_of_paragraphs)
-            ->with('paragraphs', $paragraphs);
+            ->with('paragraphs', $paragraphs)
+            ->with('success_message', $success_message);
 });
 
 
@@ -87,10 +102,12 @@ Route::get('/user_generator/{number_of_users?}', function()
     $city = $faker->city . ',';
     $state = $faker->state . ' ';
     $postcode = $faker->postcode;
+    $success_message = '';
     
     return View::make('user_generator')
     ->with('number_of_users', $number_of_users)
-    ->with('faker', $faker);
+    ->with('faker', $faker) 
+    ->with('success_message', $success_message);
 
 
 });
@@ -108,7 +125,13 @@ Route::post('/user_generator', function()
     $streetAddress= $faker->streetAddress . '<br>';
     $city = $faker->city . ',';
     $state = $faker->state . ' ';
-    $postcode = $faker->postcode.'\r\n';
+    $postcode = $faker->postcode;
+    $success_message = '';
+
+    // display "here is..." text if user is generated
+    if(isset ($_POST['number_of_users'])) {
+          $success_message = '<p>Here is your user data:</p>';
+          } else { echo '' ;} 
     
 //form validation
     $rules = array(
@@ -123,7 +146,8 @@ Route::post('/user_generator', function()
 
      return View::make('user_generator')
     ->with('number_of_users', $number_of_users)
-    ->with('faker', $faker);
+    ->with('faker', $faker)
+     ->with('success_message', $success_message);
     
 });
 

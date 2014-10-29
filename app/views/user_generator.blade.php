@@ -14,7 +14,7 @@ Pit Stop Random User Generator
 <div id="wrap" class="row">
   
   <div class="large-12 medium-12 columns">
-  <p>No need to plod doggedly through the tedious task of creating placeholder user data&mdash;just indicate the number of users you need below and generate!</p>
+  <p>No need to plod doggedly through the tedious task of creating placeholder user data&mdash;just indicate the number of users you need below and generate! Data includes user name, email address and mailing address.</p>
   </div>
 
 <div class="errors">
@@ -26,14 +26,14 @@ Pit Stop Random User Generator
   {{Form::open(array('url' => '/user_generator', 'method' => 'POST'));}}
     
       <div id="generate" class="row">
-    <div class="large-6  large-offset-4 medium-6 medium-offset-4 small-12 columns">
+    <div class="large-6  large-offset-4 medium-6 medium-offset-4 small-11 small-offset-1 columns">
       <div class="row collapse">
         <label>Number of users (maximum 99)</label>
         <div class="small-2 end columns">
-          <input type="text" name="number_of_users" id="number_of_users" />
+          <input type="text" name="number_of_users" id="number_of_users" placeholder="max 99">
         </div>
-        <div class="small-4 end columns">
-        <input type="submit" name="result" id="submit" value="Fetch Users!" class="button postfix" />
+        <div class="small-6 end columns">
+        <input type="submit" name="result" id="submit" value="Fetch Users!" class="button postfix">
         </div>
       </div>
     </div>
@@ -42,8 +42,12 @@ Pit Stop Random User Generator
 
  <div class="row">
   <div class="large-4 large-centered medium-4 medium-centered columns">
-        <p>Here is your user data:</p>
+      {{ $success_message }}
+      </div>
+    </div>
 
+<div class="row">
+  <div id="text_container" class="large-4 large-centered medium-4 medium-centered columns">
           @for ($i = 0; $i < $number_of_users; $i++)
          
             <p>{{ $faker->name }}<br />

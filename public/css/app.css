@@ -1,6 +1,3 @@
-/* custom css */
-
-
 body {
 	font-family: 'Roboto', Arial, sans-serif;
 	font-weight: 400;
@@ -104,8 +101,12 @@ button, .button {
 } 
 
 #generate {
-	/*margin-top: -1em; */
+	margin-top: -1em; 
 	margin-bottom: 1em;
+}
+#text_container {
+	color: #2E6A7F;
+	padding-bottom: 1em;
 }
 /* for error text */
 .errors {
