@@ -13,7 +13,9 @@ Pit Stop Placeholder Text Generator
   
 <div id="wrap" class="row">
   <div class="large-10 large-centered medium-10 medium-centered columns">
-  <p>Pit Stop offers &ldquo;Muttlem Ipsum,&rdquo; an eloquently meaningless mix of the traditional &ldquo;lorem ipsum&rdquo; Latin placeholder text and doggerel from the works of 19th century poet William&nbsp;Topaz&nbsp;McGonagall.</p>
+  <p>Pit Stop offers randomly generated &ldquo;Lorem Ipsum&rdquo; based on the traditional scrambled Latin text.
+
+  Tired of Lorem Ipsom? You can also generate five fixed paragraphs of &ldquo;Muttlem Ipsum,&rdquo; an eloquently meaningless mix of Latin text and doggerel from the works of 19th century poet William&nbsp;Topaz&nbsp;McGonagall.</p>
   </div>
 
   <div class="errors">
@@ -23,25 +25,34 @@ Pit Stop Placeholder Text Generator
       @endforeach
  </div>
 
- {{Form::open(array('url' => '/text_generator', 'method' => 'POST'));}}
+ 
 
 <div id="generate" class="row">
-    <div class="large-6  large-offset-4 medium-6 medium-offset-4 small-12 columns">
+{{Form::open(array('url' => '/text_generator', 'method' => 'POST'));}}
+    <div class="large-3 columns">
       <div class="row collapse">
         <label>Number of paragraphs (maximum 5)</label>
         <div class="small-2 end columns">
           <input type="text" name="number_of_paragraphs" id="number_of_paragraphs" />
         </div>
-        <div class="small-4 end columns">
-        <input type="submit" id="submit" value="Fetch Text!" class="button postfix">
+        <div class="small-6 end columns">
+        <input type="submit" id="submit" value="Lorem Ipsum" class="button postfix" />
         </div>
       </div>
     </div>
   </div> 
   {{Form::close();}}
 
+  <div class="large-5  medium-5 columns">
+{{Form::open(array('url' => '/text_generator', 'method' => 'POST', 'files' => true));}}
+        <label>Click the button to fetch five present paragraphs of Muttlem Ipsum.</label>
+      <input type="hidden" name="doggerel" />
+      <input type="submit" value="Muttlem Ipsum" class="button small" />
+        </div>
+  {{Form::close();}}
+
   <div class="row">
-  <div class="large-4 large-centered medium-4 medium-centered columns">
+  <div class="large-12 large-centered medium-4 medium-centered columns">
         <p>Here is your placeholder text:</p>
   </div>
 </div>
@@ -53,7 +64,15 @@ Pit Stop Placeholder Text Generator
               <p>{{{ $paragraph }}}</p>
 
           @endforeach
-      </div>     
+
+          <?php if(isset ($_POST['doggerel'])) {
+          $myfile = fopen("muttlem.txt", "r");
+          echo fread($myfile,filesize("muttlem.txt"));
+          fclose($myfile); }
+          ?>
+
+         
+       </div>   
     </div>
   </div><!-- end of wrap -->
 

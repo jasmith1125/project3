@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" />
 <head>
 
-    <meta charset='utf-8'>
+    <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css'>
-   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css' />
+   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css' />
     <title>@yield('title', 'Pit Stop: The Developer&rsquo;s Best Friend')</title>
     
     {{ HTML::style('css/foundation.css') }}
@@ -18,7 +18,7 @@
 
 <body>
   
-  <img src='../img/banner.jpg' alt='Friendly pitbull with "Pit Stop" title'>
+  <img src='../img/banner.jpg' alt='Friendly pitbull with "Pit Stop" title' />
 
 
 

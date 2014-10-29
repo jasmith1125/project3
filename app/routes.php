@@ -23,6 +23,7 @@ Route::get('/text_generator/{number_of_paragraphs?}', function()
     $number_of_paragraphs = Input::get('number_of_paragraphs');
     $generator = new LoremIpsum();
     $paragraphs = $generator->getParagraphs($number_of_paragraphs);
+    
     //form validation
     $rules = array(
     'number_of_paragraphs' => "Integer|min:1|max:5"
