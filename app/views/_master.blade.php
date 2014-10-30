@@ -18,7 +18,7 @@
 
 <body>
   
-  <img src='../img/banner.jpg' alt='Friendly pitbull with "Pit Stop" title' />
+  <img src='../img/banner.jpg' alt='Friendly pitbull with "Pit Stop" title'>
 
 
 

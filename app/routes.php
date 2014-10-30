@@ -31,10 +31,10 @@ Route::get('/text_generator/{number_of_paragraphs?}', function()
     );
 
     $validator = Validator::make(
-    array('name' => 'number_of_paragraphs'),
-    array('name' => 'required|min:1|max:99')
+    array('number_of_paragraphs' => 'integer'),
+    array('number_of_paragraphs' => 'required|min:1|max:99')
 );
-    
+
     $validator = Validator::make(Input::all(), $rules);
     
     if( $validator->fails()) {
@@ -57,8 +57,6 @@ Route::post('/text_generator', function()
     $paragraphs = $generator->getParagraphs($number_of_paragraphs);
     $success_message = '';
 
-    
-
     // display "here is..." text if text is generated
     if(isset ($_POST['number_of_paragraphs'])) {
           $success_message = '<p>Here is your placeholder text:</p>';
@@ -67,15 +65,15 @@ Route::post('/text_generator', function()
         $success_message = '<p>Here is your placeholder text:</p>';
           } else { echo '' ;} 
         
-
+   
     //form validation
     $rules = array(
-    'number_of_paragraphs' => "Integer|min:1|max:99"
+    'number_of_paragraphs' => "Integer|min:1|max:99",
     );
 
     $validator = Validator::make(
-    array('name' => 'number_of_paragraphs'),
-    array('name' => 'required|min:1|max:99')
+    array('number_of_paragraphs' => 'integer'),
+    array('number_of_paragraphs' => 'required|min:1|max:99')
 );
     
     $validator = Validator::make(Input::all(), $rules);

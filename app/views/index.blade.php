@@ -17,7 +17,7 @@ Pit Stop: Developer&rsquo;s Best Friend
 	</div>
 
 	<div class="large-4 columns">
-	<p>Pit Stop offers randomly generated &ldquo;Lorem Ipsum&rdquo; text based on scrambled Latin, or choose five paragraphs of preset &ldquo;Muttlem&nbsp;Ipsum.&rdquo; Muttlem Ipsum mixes Latin text with scrambled doggerel from the works of of William Topaz McGonagall, a 19th&nbsp;century wag who is widely recognized as the worst English&#8209;language poet of all time.</p>
+	<p>Pit Stop offers randomly generated &ldquo;Lorem Ipsum&rdquo; text based on scrambled Latin, or choose five paragraphs of preset &ldquo;Muttlem&nbsp;Ipsum,&rdquo; a mixed-breed placeholder text that blends traditional Lorem Ipsum with scrambled doggerel (poorly written verse) from the works of William Topaz McGonagall. McGonagall was a 19th&nbsp;century wag who is widely recognized as the worst English&#8209;language poet of all time.</p>
 		<div class="mainpage">
 		<p><span class="getform"><a href="/text_generator">Fetch Placeholder Text Generator</a></span></p>
 		</div>
