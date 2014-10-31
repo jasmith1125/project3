@@ -26,13 +26,13 @@ Pit Stop Random User Generator
   {{Form::open(array('url' => '/user_generator', 'method' => 'POST'));}}
     
       <div id="generate" class="row">
-    <div class="large-6  large-offset-4 medium-6 medium-offset-4 small-11 small-offset-1 columns">
+    <div class="large-5  large-offset-4 medium-5 medium-offset-3 small-11 small-offset-1 columns">
       <div class="row collapse">
         <label>Number of users (maximum 99)</label>
-        <div class="small-2 end columns">
+        <div class="small-3 end columns">
           <input type="text" name="number_of_users" id="number_of_users" placeholder="max 99">
         </div>
-        <div class="small-6 end columns">
+        <div class="small-7 end columns">
         <input type="submit" name="result" id="submit" value="Fetch Users!" class="button postfix">
         </div>
       </div>
@@ -41,13 +41,13 @@ Pit Stop Random User Generator
   {{Form::close();}}
 
  <div class="row">
-  <div class="large-4 large-centered medium-4 medium-centered columns">
+  <div class="large-4 large-centered medium-6 medium-centered small-7 small-centered columns">
       {{ $success_message }}
       </div>
     </div>
 
 <div class="row">
-  <div id="user_container" class="large-4 large-centered medium-4 medium-centered columns">
+  <div id="text_container" class="large-4 large-centered medium-6 medium-centered small-10 small-centered columns">
           @for ($i = 0; $i < $number_of_users; $i++)
          
             <p>{{ $faker->name }}<br />

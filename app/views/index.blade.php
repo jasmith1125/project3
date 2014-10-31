@@ -11,7 +11,7 @@ Pit Stop: Developer&rsquo;s Best Friend
 </div>
 </div>
 
-<div id="wrap" class="row">
+<div id="index_page" class="row">
 	<div class="large-4 columns">
 	<p>Generate random placeholder text for all of your web application design and graphic design needs&mdash;filler text that doesn’t include meaningful content helps your clients focus on the graphic elements of the page.
 	</div>

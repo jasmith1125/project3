@@ -9,11 +9,21 @@ body {
 	text-align: left;
 	font-size: 1em;
 }
-
 /* Background pattern from subtlepatterns.com */
 #outer_limits {
 	background: url('../img/mooning_@2X.png')repeat;
- 	height: auto%;
+ 	height: auto;
+}
+#container {
+background-color: #ffffff;
+ height: auto;
+ -webkit-box-shadow: 8px 0px 10px -5px rgba(153, 153, 153, 1), -8px 0px 10px -5px rgba(153, 153, 153, 1);
+   -moz-box-shadow: 8px 0px 10px -5px rgba(153, 153, 153, 1), -8px 0px 10px -5px rgba(153, 153, 153, 1);
+        box-shadow: 8px 0px 10px -5px rgba(153, 153, 153, 1), -8px 0px 10px -5px rgba(153, 153, 153, 1);
+}
+#index_page {
+	padding-left: .5em;
+	padding-right: .5em;
 }
 h1 {
 	font-family: 'Bubblegum Sans', sans-serif;
@@ -22,39 +32,13 @@ h1 {
 	text-align: center;
 	margin-top: .5em;
 }
-#container {
-	 background-color: #ffffff;
- 	height: auto;
- 	-webkit-box-shadow: 6px 0 8px -5px #999, -6px 0px 8px -5px #999;
-   	-moz-box-shadow: 6px 0 8px -5px #999, -6px 0px 8px -5px #999;
-        box-shadow: 6px 0 8px -5px #999, -6px 0px 8px -5px #999;
-}
-#text_container {
-	color: #2E6A7F;
-	padding-left: 1.25em;
-	padding-right: 1.25em;
-}
-#user_container {
-	color: #2E6A7F;
-}
-#intro_message {
-	text-align: center;
-}
-#wrap {
-	background-color: #ffffff;
-	padding-bottom: 1em;
-	padding-left: 1.25em;
-	padding-right: 1.25em;
-}
-
-footer {
+ footer {
 	background-color: #1D282C;
 	height: 40rem;
 	font-weight: normal;
 	padding-top: 1em;
 	color: #ffffff;
 }
-
 
 footer ul {
 	text-align: right;
@@ -76,21 +60,6 @@ footer a:visited {
 footer a:hover {
     text-decoration: underline;
 }
-/* adjust white space on left and right for small-screen devices */
-/* adjust display font size for small-screen devices */
-@media only screen and (max-width: 40em) { 
-body h1 {
-	font-size: 1.5em;
-	padding-top: .5em;
-}
-
- /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-/* adjust white space on left and right for medium-screen devices */
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-body h1 {
-	
-}
- 
 /*styling for links in body of page */
 .getform {
 	font-family: 'Bubblegum Sans', sans-serif;
@@ -119,11 +88,13 @@ button, .button {
 	font-weight: normal;
 	font-size: 2em;
 } 
+
 #generate {
 	margin-top: 1.5em; 
 }
-#success-message {
-	text-align: center;
+#text_container {
+	color: #2E6A7F;
+	padding-bottom: 1em;
 }
 /* for error text */
 .errors {
@@ -133,3 +104,25 @@ button, .button {
   font-size: .8em;
   text-align: center;
 }
+
+/* adjust white space on left and right for small-screen devices */
+/* adjust display font size for small-screen devices */
+@media only screen and (max-width: 40em) { 
+body h1 {
+	font-size: 1.5em;
+	padding-top: .5em;
+}
+
+.mainpage .getform {
+	font-size: 1.2em;
+}
+}
+ /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/* adjust white space on left and right for medium-screen devices */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+body h1 {
+	font-size: 2.5em;
+	padding-top: .5em;
+}
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
