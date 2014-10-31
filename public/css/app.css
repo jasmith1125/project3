@@ -34,6 +34,9 @@ h1 {
 	margin-left: 3em;
 	margin-right: 3em;
 }
+#user_container {
+	color: #2E6A7F;
+}
 #wrap {
 	background-color: #ffffff;
 	padding-bottom: 1em;

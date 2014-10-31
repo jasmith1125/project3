@@ -47,7 +47,7 @@ Pit Stop Random User Generator
     </div>
 
 <div class="row">
-  <div id="text_container" class="large-4 large-centered medium-4 medium-centered columns">
+  <div id="user_container" class="large-4 large-centered medium-4 medium-centered columns">
           @for ($i = 0; $i < $number_of_users; $i++)
          
             <p>{{ $faker->name }}<br />
