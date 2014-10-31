@@ -110,8 +110,7 @@ button, .button {
 	font-size: 2em;
 } 
 #generate {
-	margin-top: -1em; 
-	margin-bottom: 1em;
+	margin-top: 1.5em; 
 }
 /* for error text */
 .errors {
