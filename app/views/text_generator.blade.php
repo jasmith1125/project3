@@ -27,7 +27,6 @@ Pit Stop Placeholder Text Generator
 
 <div id="generate" class="row">
     <div class="large-5 medium-5 medium-offset-1 columns">
-
       {{Form::open(array('url' => '/text_generator', 'method' => 'POST'));}}
       <label>Choose Lorem Ipsum, indicate number of paragraphs</label>
       <div class="row collapse">
@@ -50,13 +49,13 @@ Pit Stop Placeholder Text Generator
   </div><!-- end of row div -->
 
   <div class="row">
-  <div class="large-4 large-centered medium-5 medium-centered columns">
+  <div id="intro_message" class="large-11 medium-11 end columns">
         {{ $success_message }}
   </div>
 </div>
 
   <div class="row">
-    <div id="text_container" class="large-11 medium-11 end columns">
+    <div id="text_container" class="large-11 large-centered medium-11 medium-centered columns">
           @foreach ($paragraphs as $paragraph)
               <p>{{{ $paragraph }}}</p>
           @endforeach

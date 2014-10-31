@@ -31,11 +31,14 @@ h1 {
 }
 #text_container {
 	color: #2E6A7F;
-	margin-left: 3em;
-	margin-right: 3em;
+	padding-left: 1.25em;
+	padding-right: 1.25em;
 }
 #user_container {
 	color: #2E6A7F;
+}
+#intro_message {
+	text-align: center;
 }
 #wrap {
 	background-color: #ffffff;
@@ -118,6 +121,9 @@ button, .button {
 } 
 #generate {
 	margin-top: 1.5em; 
+}
+#success-message {
+	text-align: center;
 }
 /* for error text */
 .errors {
