@@ -16,7 +16,7 @@ Pit Stop Placeholder Text Generator
   <p>Pit Stop offers randomly generated &ldquo;Lorem Ipsum&rdquo; that&rsquo;s the traditional scrambled Latin placeholder text.</p>
   <p>Tired of Lorem&nbsp;Ipsum? You can generate five fixed paragraphs of &ldquo;Muttlem Ipsum,&rdquo; an eloquently meaningless mix of Latin Lorem&nbsp;Ipsum text and doggerel from the works of 19th century poet William&nbsp;Topaz&nbsp;McGonagall.</p>
   </div>
-</div>
+
 
   <div class="errors">
     
@@ -69,5 +69,5 @@ Pit Stop Placeholder Text Generator
 
        </div>   
     </div>
-
+</div>
 @stop

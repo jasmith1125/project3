@@ -1,34 +1,18 @@
+html, body { 
+  height:100%; 
+  margin: 0 auto;
+  padding: 0;
+}
 body {
 	font-family: 'Roboto', Arial, sans-serif;
 	font-weight: 400;
 	text-align: left;
 	font-size: 1em;
 }
-/* adjust white space on left and right for small-screen devices */
-/* adjust display font size for small-screen devices */
-@media only screen and (max-width: 40em) { 
-body h1 {
-	font-size: 1.5em;
-	padding-top: .5em;
+#outer_limits {
+	background: url('../img/mooning_@2X.png')repeat;
+ 	height: 100%;
 }
-#wrap {
-	padding-left: 1em;
-	padding-right: 1em;
-}
-.mainpage .getform {
-	font-size: 1.2em;
-}
-}
- /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-
-/* adjust white space on left and right for medium-screen devices */
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-body h1 {
-	font-size: 2.5em;
-	padding-top: .5em;
-}
-} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
 h1 {
 	font-family: 'Bubblegum Sans', sans-serif;
 	font-size: 3.5em;
@@ -36,21 +20,32 @@ h1 {
 	text-align: center;
 	margin-top: .5em;
 }
- footer {
+#container {
+	 background-color: #ffffff;
+ 	height: auto;
+ 	-webkit-box-shadow: 6px 0 8px -5px #999, -6px 0px 8px -5px #999;
+   	-moz-box-shadow: 6px 0 8px -5px #999, -6px 0px 8px -5px #999;
+        box-shadow: 6px 0 8px -5px #999, -6px 0px 8px -5px #999;
+}
+#text_container {
+	color: #2E6A7F;
+}
+#wrap {
+	background-color: #ffffff;
+	padding-bottom: 1em;
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+}
+
+footer {
 	background-color: #1D282C;
 	height: 40rem;
 	font-weight: normal;
 	padding-top: 1em;
 	color: #ffffff;
 }
-#wrap {
-	background-color: #ffffff;
-	padding-bottom: 2em;
-}
-img {
-	width: 100%;
-	margin: 0 auto;
-}
+
+
 footer ul {
 	text-align: right;
 	margin-right: 1em;
@@ -71,6 +66,21 @@ footer a:visited {
 footer a:hover {
     text-decoration: underline;
 }
+/* adjust white space on left and right for small-screen devices */
+/* adjust display font size for small-screen devices */
+@media only screen and (max-width: 40em) { 
+body h1 {
+	font-size: 1.5em;
+	padding-top: .5em;
+}
+
+ /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* adjust white space on left and right for medium-screen devices */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+body h1 {
+	
+}
+ 
 /*styling for links in body of page */
 .getform {
 	font-family: 'Bubblegum Sans', sans-serif;
@@ -99,14 +109,9 @@ button, .button {
 	font-weight: normal;
 	font-size: 2em;
 } 
-
 #generate {
 	margin-top: -1em; 
 	margin-bottom: 1em;
-}
-#text_container {
-	color: #2E6A7F;
-	padding-bottom: 1em;
 }
 /* for error text */
 .errors {

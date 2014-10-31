@@ -25,9 +25,9 @@ Pit Stop: Developer&rsquo;s Best Friend
 
 	<div class="large-4 columns">
 	<p>Pit Stop also makes it easy to generate random usernames and user data you can incorporate into your web design.<p>
-		<div class="mainpage">
+		
 		<span class="getform"><a href="/user_generator">Fetch Random User Generator!</a></span>
-		</div>
+		
 	</div> <!--end row div -->
 </div><!--end of wrap div-->
 @stop

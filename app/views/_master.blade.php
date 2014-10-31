@@ -17,17 +17,22 @@
 </head>
 
 <body>
-  
+ <div id="outer_limits">
+<div id="container" class="row">
+ <div class="row">
+    <div class = "large-12 columns">
   <img src='../img/banner.jpg' alt='Friendly pitbull with "Pit Stop" title'>
-
-
+</div>
+</div>
+  <div class="large-12 columns">
 
 @yield('body')
 
 @yield('scripts')
 
-
-   <div>
+</div>
+   <div class="row">
+    <div class="large-12 columns">
     <footer>
           <ul>
              <li><a href="/">Home</a></li>
@@ -42,5 +47,8 @@
       $(document).foundation();
     </script> 
 </div>
+</div>
+</div>
+</div><!-- end outer_limits -->
 </body>
 </html>
