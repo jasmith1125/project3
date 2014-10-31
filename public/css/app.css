@@ -13,7 +13,7 @@ body {
 /* Background pattern from subtlepatterns.com */
 #outer_limits {
 	background: url('../img/mooning_@2X.png')repeat;
- 	height: 100%;
+ 	height: auto%;
 }
 h1 {
 	font-family: 'Bubblegum Sans', sans-serif;
@@ -31,6 +31,8 @@ h1 {
 }
 #text_container {
 	color: #2E6A7F;
+	margin-left: .5em;
+	margin-right: .5em;
 }
 #wrap {
 	background-color: #ffffff;
