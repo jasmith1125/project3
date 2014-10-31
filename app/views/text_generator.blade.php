@@ -12,7 +12,7 @@ Pit Stop Placeholder Text Generator
 </div><!--ends header row -->
   
 <div id="wrap" class="row">
-  <div class="large-11 large-centered medium-10 medium-centered columns">
+  <div class="large-11 large-centered medium-11 medium-centered columns">
   <p>Pit Stop offers randomly generated &ldquo;Lorem Ipsum&rdquo; that&rsquo;s the traditional scrambled Latin placeholder text.</p>
   <p>Tired of Lorem&nbsp;Ipsum? You can generate five fixed paragraphs of &ldquo;Muttlem Ipsum,&rdquo; an eloquently meaningless mix of Latin Lorem&nbsp;Ipsum text and doggerel from the works of 19th century poet William&nbsp;Topaz&nbsp;McGonagall.</p>
   </div>
@@ -56,7 +56,7 @@ Pit Stop Placeholder Text Generator
 </div>
 
   <div class="row">
-    <div id="text_container" class="large-11 large-centered medium-11 medium-centered columns">
+    <div id="text_container" class="large-11 medium-11 end columns">
           @foreach ($paragraphs as $paragraph)
               <p>{{{ $paragraph }}}</p>
           @endforeach

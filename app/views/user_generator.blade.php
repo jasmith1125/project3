@@ -13,7 +13,7 @@ Pit Stop Random User Generator
   
 <div id="wrap" class="row">
   
-  <div class="large-12 medium-12 columns">
+  <div class="large-11 large-centered medium-11 medium-centered columns">
   <p>No need to plod doggedly through the tedious task of creating placeholder user data&mdash;just indicate the number of users you need below and generate! Data includes user name, email address and mailing address.</p>
   </div>
 
