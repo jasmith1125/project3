@@ -30,4 +30,5 @@ Features I would like to add:
 1. I used Zurb Foundation 5 framework, source:  [http://foundation.zurb.com/](http://foundation.zurb.com/)  
 2. Fonts are from Google Fonts: [https://www.google.com/fonts/](https://www.google.com/fonts/)  
 3. William Topaz McGonagall poetry used within "muttlem ipsum" was found online: [http://www.poemhunter.com/william-topaz-mcgonagall/](http://www.poemhunter.com/william-topaz-mcgonagall/)  
-4. Dog photo in the banner is a personal photo of my family dawg.
+4. Dog photo in the banner is a personal photo of my family dawg.  
+5. Background texture is from [http://www.subtlepatterns.com](http://www.subtlepatterns.com)

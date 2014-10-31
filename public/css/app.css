@@ -9,6 +9,8 @@ body {
 	text-align: left;
 	font-size: 1em;
 }
+
+/* Background pattern from subtlepatterns.com */
 #outer_limits {
 	background: url('../img/mooning_@2X.png')repeat;
  	height: 100%;
